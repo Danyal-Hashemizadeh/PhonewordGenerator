@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Authors>Danyal Hashemizadeh</Authors>
+    <AssemblyName>Phoneword Generator</AssemblyName>
+    <ApplicationIcon>Custom-Icon-Design-Pretty-Office-7-Mobile.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Dictionary.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Custom-Icon-Design-Pretty-Office-7-Mobile.ico" />
+    <Content Include="Dictionary.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PhonewordGenerator.BLM\PhonewordGenerator.BLM\PhonewordGenerator.BLM.csproj" />
+  </ItemGroup>
+
+</Project>
